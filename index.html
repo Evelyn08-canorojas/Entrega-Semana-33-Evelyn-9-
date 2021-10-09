@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Entrega Semana 33 Evelyn</title>
+</head>
+<body>
+	<style>
+@font-face{
+	font-family: letra1;
+	src: url(letra1.ttf);
+}
+@font-face{
+	font-family: letra2;
+	src: url(letra2.otf);
+}
+		body{
+			background-image: url(f1.jpg);
+			background-size: cover;
+		}
+
+		.ctit{
+			position: absolute;
+			top: 40px;
+			left: 260px;
+			width: 780px;
+			height: 140px;
+			background-color: white;
+			border-style: solid;
+			border-color: lightsalmon;
+			border-width: 5px;
+		}
+		.tit1{
+			position: absolute;
+			top: 15px;
+		}
+		.bot1{
+			position: absolute;
+			top: 420px;
+			left: 112px;
+			width: 0px;
+			height: 79px;
+			background-color: white;
+			transition: 1s all;
+			transition: all 0.5s 0.5s;
+			border-style: solid;
+			border-color: #97DAB8;
+			border-width: 0px;
+		}
+		.t1{
+			position: absolute;
+			left: 7px;
+			top: 10px;
+			transition: 2s all;
+			transition: all 0.5s 0.5s;
+			width: 0px;
+			height: 56px;
+		}
+		.bot2{
+			position: absolute;
+			top: 520px;
+			left: 112px;
+			width: 0px;
+			height: 79px;
+			background-color: white;
+			transition: 1s all;
+			transition: all 0.5s 0.5s;
+			border-style: solid;
+			border-color: #B2FFA8;
+			border-width: 0px;
+
+		}
+		.t2{
+			position: absolute;
+			left: 7px;
+			top: 10px;
+			transition: 2s all;
+			transition: all 0.5s 0.5s;
+			width: 0px;
+			height: 56px;
+		}
+		.bot3{
+			position: absolute;
+			top: 260px;
+			left: 112px;
+			width: 250px;
+			height: 90px;
+			background-color: white;
+			border-style: solid;
+			border-color: #FFDB7B;
+			border-width: 5px;
+		}
+		.t3{
+			position: absolute;
+			top: -50px;
+			font-size: 60px;
+			font-family: letra1;
+			color: #FFCC45;
+			left: 40px;
+		}
+		.cres{
+			position: absolute;
+			top: 264px;
+			left: 991px;
+			width: 200px;
+			height: 90px;
+			border-width: 3px;
+			border-style: solid;
+			border-color: #FC9CB9;
+			font-family: letra2;
+			font-size: 30px;
+
+		}
+		.nums1{
+			position: absolute;
+			top: 250px;
+			left: 414px;
+			width: 190px;
+			height: 120px;
+			background-color: white;
+			border-style: solid;
+			border-color: #CE97FF;
+			border-width: 4px;
+		}
+		.ct1{
+			position: absolute;
+			top: -71px;
+			left: 57px;
+			color: black;
+			font-size: 75px;
+			font-family: letra2;
+
+		}
+		.ct2{
+			position: absolute;
+			top: -71px;
+			left: 57px;
+			color: black;
+			font-size: 75px;
+			font-family: letra2;
+
+		}
+		.nums2{
+			position: absolute;
+			top: 250px;
+			left: 734px;
+			width: 190px;
+			height: 120px;
+			background-color: white;
+			border-style: solid;
+			border-color: #9CD9FC;
+			border-width: 4px;
+		}
+
+		.pun{
+			position: absolute;
+			top: 420px;
+			left: 465px;
+			width: 340px;
+			height: 180px;
+			background-color: white;
+			border-style: solid;
+			border-color: #FAB36F;
+			border-width: 4px;
+		}
+		.ima2{
+			position: absolute;
+			top: 20px;
+			left: 53px;
+		}
+		.tex5{
+			position: absolute;
+			top: 55px;
+			left: 140px;
+			font-size: 40px;
+			font-family: letra2;
+			color: black;
+		}
+		.tiem{
+			position: absolute;
+			top: 420px;
+			left: 860px;
+			width: 340px;
+			height: 180px;
+			background-color: white;
+			border-style: solid;
+			border-color: #DF9E98;
+			border-width: 4px;
+		}
+		.tex4{
+			position: absolute;
+			top: 55px;
+			left: 140px;
+			font-size: 40px;
+			font-family: letra2;
+			color: black;
+		}
+		.tex44{
+			position: absolute;
+			top: 55px;
+			left: 40px;
+			font-size: 40px;
+			font-family: letra2;
+			color: black;
+		}
+		.ima1{
+			position: absolute;
+			top: 20px;
+			left: 43px;
+		}
+		.sig{
+			position: absolute;
+			top: 290px;
+			left: 643px;
+			width: 50px;
+			height: 50px;
+			background-color: white;
+			border-style: solid;
+			border-color: #FE83A8;
+			border-width: 4px;
+
+		}
+		.tex3{
+			position: absolute;
+			top: -60px;
+			left: 13px;
+		    color: black;
+			font-size: 50px;
+			font-family: letra2;
+
+		}
+	</style>
+	<div class="cgrande" id="cgran"></div>
+    <div class="ctit">
+    	<img src="titulo.png" class="tit1">
+    </div>
+
+    <div class="bot1" id="boton1" onclick="aleatorio()">
+    	<img src="num.png" class="t1" id="tex1">
+    </div>
+    <div class="bot2" id="boton2" onclick="ingresar()">
+    	<img src="ing.png" class="t2" id="tex2">
+    </div>
+    <div class="bot3" id="boton3" onclick="iniciar()">
+    	<p class="t3"> Iniciar</p>
+    </div>
+    
+    
+<form>
+		
+		<input type="text" class="cres" id="resp" placeholder="Respuesta: ">
+		<br><br>
+
+</form>
+    <div class="nums1" id="numeros1">
+    	<p class="ct1" id="cuat1"> </p>
+    </div>
+    <div class="nums2" id="numeros2">
+    	<p class="ct2" id="cuat2"> </p>
+    </div>
+    <div class="pun">
+        <img src="im2.png" class="ima2">
+    	<p class="tex5" id="puntos"></p>	
+    </div>
+    <div class="tiem">
+    	<img src="im1.png" class="ima1">
+    	<p class="tex4" id="tiempo"></p>
+    	<p class="tex44" id="tiempoo"></p>
+    </div>
+    <div class="sig">
+    	<p class="tex3" id="signo"></p>
+    </div>
+
+   <script>
+
+   	seg=60;
+	i=0;
+	
+		function iniciar(){
+	
+		boton1.style.width=250+"px";
+   		tex1.style.width=238+"px";
+   		boton1.style.borderWidth=5+"px";
+   		boton2.style.width=250+"px";
+   		boton2.style.borderWidth=5+"px";
+   		tex2.style.width=238+"px";
+   		if(i==0){
+				tempo=setInterval(iniciar,1000);
+				i=1;
+			}
+			seg=seg-1;
+			tiempo.innerHTML=" "+seg;
+			if(seg==0){
+				clearInterval(tempo);
+				tiempoo.innerHTML="Fin del Tiempo";
+				tiempo.innerHTML=" ";
+			}
+
+		}
+	
+
+
+   	function aleatorio() {
+   		var num1= Math.floor((Math.random() * (21-1)) +1);
+   		cuat1.innerHTML=num1;
+   		var num2= Math.floor((Math.random() * (21-1)) +1);
+   		cuat2.innerHTML=num2;
+      
+    var n1= Math.floor((Math.random() * (5-1)) +1);
+    if(n1==1||n1==3)
+    {
+           signo.innerHTML="-";
+           resul=num1-num2;
+    }else{
+    	if(n1==2||n1==4)
+    	{
+    		signo.innerHTML="+";
+    		resul=num1+num2;
+          
+    	}
+    	
+    }
+}
+total=0;
+      function ingresar()
+      {
+      	res=Number(resp.value);
+
+       if(res==resul)
+       {
+       	total=total+10;
+       	puntos.innerHTML=total;
+       }else{
+       		total=total-10;
+       	puntos.innerHTML=total;
+       }
+      }
+
+   	
+   </script>
+
+
+</body>
+</html>
